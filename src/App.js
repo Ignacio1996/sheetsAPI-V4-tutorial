@@ -4,12 +4,15 @@ import './App.css';
 
 class App extends Component {
 
+  //updates the spreadsheet
   updateSheetValues = () =>{   
-      fetch(`https://sheets.googleapis.com/v4/spreadsheets/1nIrrHDVn0Jx3AbyWowfvLoBkvHg7jqvtP5LH1yRI2Ks:batchUpdate`, {
+                                                            //update the sheet ID here!
+      fetch(`https://sheets.googleapis.com/v4/spreadsheets/1nIrrHDVn0Jx3AbyWowfvHg7jqvtP5LH1yRI2Ks:batchUpdate`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ya29.GlvfBvCE5eSG-LR9W2U1yT6zAPtKv2yRlyrbLzbMScHy_FU1r5DJ9GN10zdglHeVcyisGK21K1z4FrVT1YQHkF2BSUHEHF6-SEInzfb13_I0U19cky2iWeiPysNZ`,
+                                //update this token with yours. 
+          Authorization: "Bearer TOKEN_GOES_HERE",
         },
         body: JSON.stringify({
         
@@ -36,13 +39,16 @@ class App extends Component {
         })
       })
   }
-  
+
+  // Gets a range of values from a spreadsheet
   getSheetValues = async () =>{
-    const request = await fetch(`https://sheets.googleapis.com/v4/spreadsheets/1nIrrHDVn0Jx3AbyWowfvLoBkvHg7jqvtP5LH1yRI2Ks/values/A1:B5`,
+                                                                              //Sheet ID goes here
+    const request = await fetch(`https://sheets.googleapis.com/v4/spreadsheets/SHEET_ID_HERE/values/A1:B5`, //you can change the range to whatever you want e.g A1, B5:F3, F5, etc
     {
       headers: {
         "Content-Type": "application/json",
-        Authorization: "Bearer ya29.GlvfBtCQ5SHDvUIlEk_CJyAqhAcBGBeJvOn4OkyxW6q95Jb7xmWrvQnmWZv6il14WBCtjUWPxCASbN42QLNRYI-8e7AopGU_N4UqpU0HhCbu4SjBFHS2w6ssZBiO" 
+                                //update with your token
+        Authorization: "Bearer TOKEN_GOES_HERE" 
     }
     });
     const data = await request.json();
