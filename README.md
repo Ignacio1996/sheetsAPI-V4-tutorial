@@ -31,7 +31,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 Click the buttons and it should work! Feel free to modify the code to make it more efficient! Create state variables with the token and ID, find more Google Sheets functions (update formats, update column width, update background color, etc)
 
-## You can see more examples at www.snowballfinances.com . It's what I've been working on the past year. You can also learn some personal finance.
+## You can see more examples at www.snowballfinances.com . It's what I've been working on the past year. You can also learn some personal finance! I gamify financial education. So you can learn how to manage a Spreadsheet, create and play on a real budget, and see how good of an investor you are!
 
 Happy coding!
 
+### Ignacio N. Aguirre
