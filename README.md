@@ -1,4 +1,4 @@
-## Simple React.js App using Google Sheets API v4
+# Simple React.js App using Google Sheets API v4
 
 To make this work, create a new spreadsheet on your Google Sheets account. Get the spreadsheet Id from the url.
 
@@ -11,7 +11,7 @@ Find the Sheets API V4 scope, and select https://www.googleapis.com/auth/spreads
 
 ## Click Authorize APIs. You'll get an Authorization code. Hit Exchange authorization code for tokens.
 
-# Copy the access token:
+## Copy the access token:
 
 e.g Access Token: ya29.GlvfBsNYQIAsfSyNWuAaiErjtN2fMdar90lzlFx81HKsPr7OS2mPVsoquXzpsRIKqryh8JtoupYCCBE5idwEhUukIZhlvu-f3AJFow4t41Lg2
 (this wont work because tokens are temporary).
@@ -21,7 +21,7 @@ e.g Access Token: ya29.GlvfBsNYQIAsfSyNWuAaiErjtN2fMdar90lzlFx81HKsPr7OS2mPVsoqu
 If you've followed these steps correctly, it should work! Let me know if it doesnt.
 
 
-### `npm start`
+## `npm start`
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -31,7 +31,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 Click the buttons and it should work! Feel free to modify the code to make it more efficient! Create state variables with the token and ID, find more Google Sheets functions (update formats, update column width, update background color, etc)
 
-# You can see more examples at www.snowballfinances.com . It's what I've been working on the past year. You can also learn some personal finance.
+## You can see more examples at www.snowballfinances.com . It's what I've been working on the past year. You can also learn some personal finance.
 
 Happy coding!
 
