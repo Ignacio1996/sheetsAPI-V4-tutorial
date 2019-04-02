@@ -36,15 +36,19 @@ class App extends Component {
         })
       })
   }
-
-  getSheetValues = async range => {
-    const request = await fetch(
-      "https://sheets.googleapis.com/v4/spreadsheets/1nIrrHDVn0Jx3AbyWowfvLoBkvHg7jqvtP5LH1yRI2Ks/values/A1:B5"
-    );
+  
+  getSheetValues = async () =>{
+    const request = await fetch(`https://sheets.googleapis.com/v4/spreadsheets/1nIrrHDVn0Jx3AbyWowfvLoBkvHg7jqvtP5LH1yRI2Ks/values/A1:B5`,
+    {
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "Bearer ya29.GlvfBtCQ5SHDvUIlEk_CJyAqhAcBGBeJvOn4OkyxW6q95Jb7xmWrvQnmWZv6il14WBCtjUWPxCASbN42QLNRYI-8e7AopGU_N4UqpU0HhCbu4SjBFHS2w6ssZBiO" 
+    }
+    });
     const data = await request.json();
-    console.log("sheets data", data);
+    console.log(data);
     return data;
-  };
+  }
 
   render() {
     return (
