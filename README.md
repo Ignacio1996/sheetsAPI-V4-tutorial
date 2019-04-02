@@ -1,5 +1,7 @@
 # Simple React.js App using Google Sheets API v4
 
+## Clone this app and run `npm install`
+
 To make this work, create a new spreadsheet on your Google Sheets account. Get the spreadsheet Id from the url.
 
 e.g https://docs.google.com/spreadsheets/d/1nIrrHDVn0Jx3AbyWowfvLvHg7jqvtP5LH1yRI2Ks/edit
